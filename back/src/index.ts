@@ -37,6 +37,14 @@ server.get("/doces/:sabor", async(req, res) => {
     return doces;
 })
 
-server.listen({ port: 3000 }, () => {
-    console.log("server.init");
+
+const port = Number(process.env.PORT) || 3000;
+
+server.listen({ port, host: "0.0.0.0" }, (err) => {
+  if (err) {
+    console.error(err);
+    process.exit(1);
+  }
+
+  console.log(`Servidor iniciado na porta ${port}`);
 });
