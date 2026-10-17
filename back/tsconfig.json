@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "ES2022", // Ou 'ES2017' ou superior
+    "module": "NodeNext", // Ou 'Node16', 'ESNext'
+    "moduleResolution": "NodeNext",
+    "outDir": "./Dist",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true
+  }
+}

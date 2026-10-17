@@ -1,0 +1,607 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Caacupe+One&family=Climate+Crisis:YEAR@1979&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Isometra&family=Lobster&family=Uncial+Antiqua&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+html {
+    width: 100%;
+}
+
+
+header {
+    background-color: rgb(243, 146, 161);
+
+    width: 100%;
+    height: 200px;
+
+    display: flex;
+    flex-direction: column;
+
+
+    margin-bottom: 20px;
+}
+
+header .logo {
+    /* background-color: red; */
+    margin: auto;
+    width: 70%;
+    height: auto;
+    margin-top: 0px;
+}
+
+.logo .foto-logo {
+    width: 20%;
+    margin: auto;
+}
+
+.logo .foto-logo img {
+    object-fit: cover;
+    width: 100%;
+}
+
+
+
+nav {
+    /* background-color: green; */
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+ul {
+    /* background-color: yellow; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 5px;
+    flex-direction: column;
+    text-align: center;
+}
+
+ul li a {
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+    color: rgb(216, 39, 65);
+}
+
+main {
+    /* background-color: purple; */
+    width: 90%;
+    margin: auto;
+}
+
+/* HOME */
+#home {
+    /* background-color: blue; */
+
+    width: 100%;
+    height: 160px;
+
+
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.img-cupcak {
+    /* background-color: springgreen; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+}
+
+.img-cupcak img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.txt-home {
+    /* background-color: chocolate; */
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    gap: 10px;
+
+    width: 85%;
+}
+
+.txt-home h1 {
+    font-size: 9vw;
+    color: rgb(228, 123, 139);
+}
+
+.txt-home p {
+    font-size: 3vw;
+    color: black;
+}
+
+.txt-home p span {
+    color: rgb(216, 39, 65);
+}
+
+
+/* BLOCO COM BOLOS E CUPCAKES */
+#doces {
+    /* background-color: red; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-sabores {
+    /* background-color: blue; */
+    margin-bottom: 10px;
+    margin-top: 5px;
+
+    display: flex;
+    width: 90%;
+
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.input-sabores input {
+    border: 0.1px solid;
+    border-radius: 15px;
+
+    width: 100%;
+    height: 25px;
+    margin: auto;
+    padding: 4px;
+    margin-bottom: 10px;
+
+    text-align: center;
+    background-color: rgba(255, 182, 193, 0.474);
+    transition: 0.3s;
+}
+
+.input-sabores input:hover {
+    box-shadow: 1px 0px 20px 0px pink;
+}
+
+.input-sabores button {
+    border: none;
+
+    width: 30%;
+    padding: 5px;
+    border-radius: 9px;
+
+    background-color: rgb(241, 134, 150);
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.input-sabores button:hover {
+    transform: translateY(-2px)
+}
+
+#Nossos-doces {
+    background-color: rgb(243, 146, 161);
+    width: 90%;
+    height: auto;
+    padding: 10px;
+
+    margin: auto;
+    margin-bottom: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    border-radius: 15px;
+    gap: 50px;
+}
+
+.blocoDoces {
+    background-color: white;
+
+    width: 30%;
+    height: 160px;
+    padding: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    border-radius: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.blocoDoces img {
+    width: 100%;
+    border-radius: 10px;
+    height: 110px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.blocoDoces:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 1px 10px 8px rgb(229, 109, 129);
+}
+
+.blocoDoces p {
+    color: rgb(252, 110, 131);
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.botaoBlocos {
+    width: 90%;
+    height: 15px;
+    padding: 5px;
+
+    background-color: rgb(252, 110, 131);
+    border: none;
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.3s;
+}
+
+.botaoBlocos:hover {
+    background-color: rgb(232, 34, 63);
+}
+
+/* ONDE NOS ENCONTRAR */
+#onde-nos-encontrar {
+    background-color: rgb(243, 146, 161);
+    border-radius: 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    padding: 5px;
+
+    width: 100%;
+}
+
+
+.txts-end {
+    /* background-color: blue; */
+    width: 50%;
+    margin: auto;
+}
+
+
+.txt-onde-nos-encontrar {
+    /* background-color: lightgreen; */
+    width: 100%;
+    text-align: center;
+}
+
+.txt-onde-nos-encontrar h2 {
+    color: black;
+    font-size: 25px;
+}
+
+.endereco {
+    /* background-color: gray; */
+    width: 100%;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.endereco p {
+    margin-top: 5px;
+    color: black;
+    text-align: center;
+    font-size: 15px;
+}
+
+.endereco-lugar {
+    width: 90%;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.endereco-lugar:hover {
+    transform: translateY(-5px);
+}
+
+.endereco-lugar img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* SOBRE NOS */
+#Sobre-nos {
+    background-color: rgb(243, 146, 161);
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 25px;
+    /* padding: 15px; */
+}
+
+.txt-sobre-nos {
+    /* background-color: red; */
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.txt-sobre-nos h2 {
+    color: black;
+    font-size: 25px;
+}
+
+.txt-img-sobre {
+    width: 100%;
+    display: flex;
+}
+
+.txt-completo-sobre {
+    /* background-color: blue; */
+    padding: 10px;
+    width: 70%;
+    margin: auto;
+}
+
+.txt-completo-sobre p {
+    font-size: 80%;
+    color: black;
+}
+
+.img-sobre {
+    /* background-color: brown; */
+    width: 30%;
+}
+
+.img-sobre img {
+    width: 100%;
+    border-radius: 80px;
+}
+
+footer {
+    width: 100%;
+    background-color: rgb(243, 146, 161);
+    text-align: center;
+    font-size: 15px;
+    gap: 10%;
+    /* padding: 0px; */
+    margin-top: 15px;
+}
+
+/* TELAS GRANDES */
+@media (min-width: 600px) {
+    header {
+        height: 70px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        flex-direction: row;
+        margin-bottom: 100px;
+    }
+
+    header .logo {
+        /* background-color: red; */
+        width: 15%;
+        height: 70px;
+        display: flex;
+        flex-direction: row;
+        margin: 0px;
+        gap: 0px;
+    }
+
+    .input-sabores {
+        /* background-color: blue; */
+        margin-top: 0px;
+        width: 50%;
+    }
+
+    .logo .foto-logo {
+        width: 60%;
+        height: 100%;
+        /* background-color: yellow; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo .foto-logo img {
+        width: 100%;
+    }
+
+
+    nav {
+        /* background-color: aqua; */
+        width: 65%;
+        margin: 0;
+    }
+
+    ul {
+        width: 100%;
+        list-style: none;
+
+        display: flex;
+        flex-direction: row;
+
+        gap: 20px;
+    }
+
+    ul li a {
+        font-size: 15px;
+    }
+
+
+    /* HOME */
+    #home {
+        margin-bottom: 90px;
+    }
+
+    .txt-home h1 {
+        font-size: 7vw;
+        /* color: lightpink; */
+    }
+
+    .txt-home p {
+        font-size: 2vw;
+    }
+
+
+    .img-cupcak {
+        /* background-color: springgreen; */
+        width: 20%;
+    }
+
+    .txt-home {
+        width: 70%;
+    }
+
+    /* BLOCO DOCES */
+
+    #Nossos-doces {
+        width: 100%;
+        margin-bottom: 50px;
+        gap: 10px;
+    }
+
+    .blocoDoces {
+        width: 25%;
+        height: 240px;
+        padding: 15px;
+    }
+
+    .blocoDoces img {
+        height: 170px;
+    }
+
+    .blocoDoces p {
+        font-size: 15px;
+    }
+
+    .botaoBlocos {
+        width: 60%;
+        height: 25px;
+        font-size: 16px;
+    }
+
+
+    /* ONDE NOS ENCONTRAR */
+    #onde-nos-encontrar {
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .txts-end {
+        /* background-color: blue; */
+        width: 50%;
+    }
+
+    .txt-onde-nos-encontrar {
+        /* background-color: lightgreen; */
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .txt-onde-nos-encontrar h2 {
+        font-size: 3.5vw;
+    }
+
+    .endereco {
+        /* background-color: gray; */
+        width: 100%;
+        gap: 3px;
+    }
+
+    .endereco p {
+        font-size: 2vw;
+    }
+
+    .endereco-lugar {
+        /* background-color: blue; */
+        width: 50%;
+        margin: auto;
+    }
+
+
+    .endereco-lugar img {
+        width: 90%;
+        border-radius: 250px;
+        object-fit: cover;
+    }
+
+
+    /* SOBRE NOS */
+
+    .txt-sobre-nos h2 {
+        font-size: 50px;
+    }
+
+    .txt-completo-sobre {
+        /* background-color: blue; */
+        padding: 10px;
+        width: 80%;
+        margin: auto;
+    }
+
+    .txt-completo-sobre p {
+        font-size: 20px;
+    }
+
+    .img-sobre {
+        width: 20%;
+    }
+
+}
+
+@media(min-width: 1080px) {
+
+    .txt-home h1 {
+        font-size: 6vw;
+    }
+
+    .input-sabores {
+        /* background-color: blue; */
+        margin-top: 0px;
+        width: 30%;
+    }
+
+    .blocoDoces {
+        width: 15%;
+        height: 240px;
+        padding: 15px;
+    }
+
+}
