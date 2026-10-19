@@ -9,9 +9,6 @@ server.register(fastifyCors, {
     origin: "*"
 });
 
-
-
-
 const banco = await mysql.createConnection({
     host: process.env.DB_HOST!,
     user: process.env.DB_USER!,
@@ -20,8 +17,10 @@ const banco = await mysql.createConnection({
     port: Number(process.env.DB_PORT) || 3306
 });
 
-
-
+// 1. Nova rota raiz adicionada para evitar o erro 404
+server.get("/", async (req, res) => {
+    return { message: "API de Doces rodando com sucesso no Railway!" };
+});
 
 server.get("/doces", async (req, res) => {
     res.type("application/json").code(200);
@@ -41,7 +40,6 @@ server.get("/doces/:sabor", async(req, res) => {
     );
     return doces;
 })
-
 
 const port = Number(process.env.PORT) || 3000;
 
