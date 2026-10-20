@@ -82,13 +82,3 @@ Doce Encanto
 | API de produtos | [Endpoint `/doces`](https://doce-encanto-production-2b82.up.railway.app/doces) |
 
 A API disponibiliza a rota `GET /doces`, que retorna os dados dos produtos em formato JSON.
-
-## 🚀 Executando o projeto localmente
-
-### Pré-requisitos
-
-- Git
-- Node.js e npm
-- MySQL
-- Repositórios do front-end e do back-end
-
