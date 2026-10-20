@@ -1,7 +1,10 @@
 import { criarcards } from "./criarcards/cards.js"
+
+const backend = "https://doce-encanto-production-2b82.up.railway.app";
+
 const ajax = new XMLHttpRequest()
 
-ajax.open("GET", "http://localhost:3000/doces")
+ajax.open("GET", `${backend}/doces`);
 ajax.send()
 
 ajax.onload = function () {
