@@ -79,7 +79,7 @@ Doce Encanto
 | Recurso | Link |
 |---|---|
 | Aplicação web | [Doce Encanto — Vercel](https://doce-encanto-front.vercel.app/) |
-| API de produtos | [Endpoint `/doces`](https://doce-encanto-production-4878.up.railway.app/doces) |
+| API de produtos | [Endpoint `/doces`](https://doce-encanto-production-2b82.up.railway.app/doces) |
 
 A API disponibiliza a rota `GET /doces`, que retorna os dados dos produtos em formato JSON.
 
@@ -92,28 +92,3 @@ A API disponibiliza a rota `GET /doces`, que retorna os dados dos produtos em fo
 - MySQL
 - Repositórios do front-end e do back-end
 
-### 1. Clone os repositórios
-
-Clone o repositório do front-end e o do back-end separadamente, utilizando suas respectivas URLs do GitHub.
-
-### 2. Configure o back-end
-
-Entre na pasta do back-end, instale as dependências e configure as variáveis de ambiente necessárias para a conexão com o banco de dados.
-
-```bash
-npm install
-```
-
-Crie um arquivo `.env` com as configurações do banco de dados, seguindo os nomes de variáveis esperados pelo projeto.
-
-### 3. Configure o front-end
-
-Configure a variável de ambiente utilizada para indicar a URL da API:
-
-```env
-VITE_BACKEND=http://localhost:PORTA/doces
-```
-
-Substitua `PORTA` pela porta configurada para a API local. Se o front-end utilizar Vite, reinicie o servidor de desenvolvimento após alterar o arquivo `.env`.
-
-### 4. Inicie
